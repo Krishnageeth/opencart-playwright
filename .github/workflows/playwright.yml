@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test 01 02
+      run: npx playwright test 01 02 --project=chromium
     - name: Commit and Push changes
       run:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
