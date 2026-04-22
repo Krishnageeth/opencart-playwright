@@ -25,7 +25,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add data.csv
         git commit -m "Update data.csv with new registration" || echo "No changes to commit"
-        git push
+        git push origin master
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
